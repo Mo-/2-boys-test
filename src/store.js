@@ -135,7 +135,7 @@ export default createStore({
 
         getAvailableSelected(state) {
             return state.availableSelected
-                ? state.availableItems.filter((item) => item.id === state.availableSelected)[0]
+                ? state.availableItems.find((item) => item.id === state.availableSelected)
                 : false
         },
 
